@@ -1,0 +1,257 @@
+extends layout 
+
+block css
+    link(rel='stylesheet', href='/css/exemplos.css')
+
+block titulo 
+    title=`Exemplos`
+
+block js 
+    script(src='/js/funcoes.js') 
+
+block conteudo
+    main
+        h1 Exemplos de agrotóxicos
+        p.descricao-titulo
+            | A seguir serão apresentadas certas substâncias de uso agrícola que exemplificam diferentes tipologias de agrotóxicos.
+            | Em sua descrição haverá identificação das funções orgânicas, e particularidades de uso e finalidade.
+
+        h2#sumario Sumário
+        ul
+            li
+                a(href='#mancozeb').link-sumario Mancozeb
+            li
+                a(href='#diclobenil').link-sumario Diclobenil
+            li
+                a(href='#deltametrina').link-sumario Deltametrina
+            li
+                a(href='#brodifacoum').link-sumario Brodifacoum
+            li
+                a(href='#paraquat').link-sumario Paraquat
+        //-----------------------------------------
+
+        h2#mancozeb Mancozeb
+
+        .div-img.text-center
+            .d-inline(onclick=`showFuncoes('mz', 'mz-click')`)
+                img.img#mz.sem-funcoes(src='/img/mancozeb.png', width='70%')
+                img.img#mz-click.com-funcoes(src='/img/mancozeb-click.png', width='73%')
+            
+            .texto-funcao.d-flex.align-items-center.justify-content-center
+                img.img-click(src="/img/click.png", width='35px', height='35px')
+                p.d-inline Clique na estrutura e descubra as funções
+
+        .propriedades-composto.texto-pesquisa
+            strong Tipo de agrotóxico: 
+            p.d-inline Fungicida
+            br
+
+            strong Classe toxicológica: 
+            p.d-inline Categoria 5 - Improvável de causar dano agudo
+            br
+
+            strong.text-decoration-underline Propriedades 
+            ul
+                li
+                    strong Fórmula: 
+                    | (C4H6N2S4Mn)x (Zn)y.
+                li
+                    strong Densidade: 
+                    | 0,37g/ml (20 °C).
+                li
+                    strong Ponto de fusão: 
+                    | sem alterações a 195 °C.
+                li
+                    strong Solubilidade:  
+                    | solúvel em água, água desaerada.
+
+            strong Aplicação: 
+            p.d-inline
+                |Vendido como um produto sólido, como grânulos dispersíveis ou pó molhado.
+                |Não é inflamável ou corrosivo e age ao entrar em contato com o fungo. Ele age
+                |de forma protetiva, impedindo a penetração do fungo na planta.
+        //-----------------------------------------
+
+        h2#diclobenil Diclobenil
+
+        .div-img.text-center
+            .d-inline(onclick=`showFuncoes('db', 'db-click')`)
+                img.img#db.sem-funcoes(src='/img/diclobenil.png', width='25%')
+                img.img#db-click.com-funcoes(src='/img/diclobenil-click.png', width='30%')
+            
+            .texto-funcao.d-flex.align-items-center.justify-content-center
+                img.img-click(src="/img/click.png", width='35px', height='35px')
+                p.d-inline Clique na estrutura e descubra as funções
+
+        .propriedades-composto.texto-pesquisa
+            strong Tipo de agrotóxico: 
+            p.d-inline Herbicida
+            br
+
+            strong Classe toxicológica: 
+            p.d-inline Categoria 4 - Pouco tóxico
+            br
+
+            strong.text-decoration-underline Propriedades 
+            ul
+                li
+                    strong Fórmula: 
+                    | C6H3Cl2CN.
+                li
+                    strong Densidade: 
+                    | 1.62 g/cm³.
+                li
+                    strong Ponto de fusão: 
+                    | 145-146°C (puro).
+                li
+                    strong Solubilidade:  
+                    | não solúvel em água.
+
+            strong Aplicação: 
+            p.d-inline 
+                | Aplicação terrestre, vendido como granulado dispersível e não corrosivo, 
+                | absorvido pelas raízes e através das folhas das plantas infestantes, 
+                | mostrando ação de contato e residual.
+        //-----------------------------------------
+
+        h2#deltametrina Deltametrina
+
+        .div-img.text-center
+            .d-inline(onclick=`showFuncoes('dt', 'dt-click')`)
+                img.img#dt.sem-funcoes(src='/img/deltametrina.png', width='70%')
+                img.img#dt-click.com-funcoes(src='/img/deltametrina-click.png', width='64%')
+            
+            .texto-funcao.d-flex.align-items-center.justify-content-center
+                img.img-click(src="/img/click.png", width='35px', height='35px')
+                p.d-inline Clique na estrutura e descubra as funções
+
+        .propriedades-composto.texto-pesquisa
+            strong Tipo de agrotóxico: 
+            p.d-inline Inseticida
+            br
+
+            strong Classe toxicológica: 
+            p.d-inline Categoria 3 - Moderadamente tóxico
+            br
+
+            strong.text-decoration-underline Propriedades 
+            ul
+                li
+                    strong Fórmula: 
+                    | C22H19Br2NO3.
+                li
+                    strong Densidade: 
+                    | 1.5g/cm³.
+                li
+                    strong Ponto de fusão: 
+                    | 98°C.
+                li
+                    strong Solubilidade:  
+                    | praticamente insolúvel em água.
+
+            strong Aplicação: 
+            p.d-inline
+                |É um produto à base de Deltametrina. Eficaz contra pulgões, lagartas, 
+                |cochonilhas, formigas de jardim, tripes, broca-das-pontas e mosca 
+                |branca. Age através de contato e ingestão.
+        //-----------------------------------------
+
+        h2#brodifacoum Brodifacoum
+
+        .div-img.text-center
+            .d-inline(onclick=`showFuncoes('bf', 'bf-click')`)
+                img.img#bf.sem-funcoes(src='/img/brodifacoum.png', width='70%')
+                img.img#bf-click.com-funcoes(src='/img/brodifacoum-click.png', width='69.5%')
+            
+            .texto-funcao.d-flex.align-items-center.justify-content-center
+                img.img-click(src="/img/click.png", width='35px', height='35px')
+                p.d-inline Clique na estrutura e descubra as funções
+
+        .propriedades-composto.texto-pesquisa
+            strong Tipo de agrotóxico: 
+            p.d-inline Rodenticida
+            br
+
+            strong Classe toxicológica: 
+            p.d-inline Categoria 3 - Moderadamente tóxico
+            br
+
+            strong.text-decoration-underline Propriedades 
+            ul
+                li
+                    strong Fórmula: 
+                    | C31H23BrO3.
+                li
+                    strong Densidade: 
+                    | 0.5 a 0.6kg/L
+                li
+                    strong Ponto de fusão: 
+                    | 228-230°C.
+                li
+                    strong Solubilidade:  
+                    | insolúvel em água.
+
+            strong Aplicação: 
+            p.d-inline
+                | Vendido em forma de grânulos, eficaz contra ratos e camundongos, modo de 
+                | ação anticoagulante, interrompendo o ciclo de formação da Vitamina K1, 
+                | necessária para a produção de vários fatores de coagulação do sangue, 
+                | causando hemorragias.
+        //-----------------------------------------
+
+        h2#paraquat Paraquat
+
+        .div-img.text-center
+            .d-inline(onclick=`showFuncoes('pq', 'pq-click')`)
+                img.img#pq.sem-funcoes(src='/img/paraquat.png', width='70%')
+                img.img#pq-click.com-funcoes(src='/img/paraquat-click.png', width='72%')
+            
+            .texto-funcao.d-flex.align-items-center.justify-content-center
+                img.img-click(src="/img/click.png", width='35px', height='35px')
+                p.d-inline Clique na estrutura e descubra as funções
+
+        .propriedades-composto.texto-pesquisa
+            strong Tipo de agrotóxico: 
+            p.d-inline Desfoliante
+            br
+
+            strong Classe toxicológica: 
+            p.d-inline 
+                |Classificação 1 - altamente tóxico (efeitos inalatórios agudos), 
+                |Categoria 2 - altamente tóxico (via oral) e Categoria III - 
+                |moderadamente tóxico (via cutânea)
+            br
+
+            strong.text-decoration-underline Propriedades 
+            ul
+                li
+                    strong Fórmula: 
+                    | C12H14Cl2N2
+                li
+                    strong Densidade: 
+                    | 1.25g/cm³.
+                li
+                    strong Ponto de fusão: 
+                    | 175-180°C, decompõe-se a 300°C.
+                li
+                    strong Solubilidade:  
+                    | solúvel em água.
+
+            strong Aplicação: 
+            p.d-inline
+                | É um desfoliante de contato não-seletivo, atuando na presença de luz, 
+                | desidratando as partes verdes de todas as plantas com as quais entra 
+                | em contato; após a aplicação a penetração ocorre quase imediatamente, 
+                | e pode ser usado em formato de spray.
+            br
+
+            strong Observação: 
+            p.d-inline 
+                |O Paraquat costuma ser chamado de herbicida, mas é considerado um 
+                |desfoliante, pois ao entrar em contato com as folhas de uma planta, 
+                |ele induz a queda das mesmas, enquanto um herbicida tem como 
+                |propósito destruir ou inibir o crescimento de determinadas plantas.
+
+        .link-voltar
+            a(href='#sumario')
+                img(src='/img/voltar.png', width='50px', height='50px')

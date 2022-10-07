@@ -1,0 +1,38 @@
+doctype html
+html(lang='pt-br')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    link(rel='icon', type='image/x-icon', href='/img/caveira.png')
+
+    link(href='/bscss/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/layout.css', rel='stylesheet')
+    link(href='/css/responsivo.css', rel='stylesheet')
+
+    block css
+
+    block titulo
+
+    block js 
+
+  body
+    header
+      nav#nav-cabecalho.d-flex.justify-content-between.align-items-center
+        a.link-nav(href='/')#titulo-cabecalho Agrotóxicos
+        a.link-nav(href='/exemplos') Exemplos
+        a.link-nav(href='/consequencias') Consequências
+        a.link-nav(href='/quem-somos') Quem somos
+        
+    block conteudo 
+
+    .text-center
+      a#link-maca(href='https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/agrotoxicos', target='_blank')
+        img#maca(src='/img/apple.gif')
+    footer#rodape.d-flex.justify-content-between.align-items-center
+        a#link-ifms(href='https://www.ifms.edu.br', target='_blank')
+          img#ifms(src='/img/logo-if.png')
+        p.texto-rodape Turma 229A
+        p.texto-rodape 2022
+        p.texto-rodape 5º semestre

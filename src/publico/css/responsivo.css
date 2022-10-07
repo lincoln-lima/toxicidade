@@ -1,0 +1,173 @@
+/* ------------------ mobile ------------------*/
+@media (max-width: 768px){
+
+/* Cabeçalho */
+    #nav-cabecalho {
+        padding: 3% 2%;
+    }
+
+    #titulo-cabecalho {
+        font-size: 1.8rem;
+        margin-right: 5%;
+    }
+    
+    .link-nav {
+        font-size: 0.9rem;
+    }
+
+/* Rodapé */
+    #rodape {
+        padding: 2%;
+    }
+
+    .texto-rodape {
+        font-size: 0.65rem;
+    }
+    
+    #link-ifms {
+        margin-right: 18%;
+    }
+    
+    #ifms {
+        width: 8rem;
+    }
+    
+    #link-maca {
+        top: 1.5rem;
+    }
+
+    #maca {
+        width: 3rem;
+    }
+
+/* Genéricos */
+    main {
+        padding: 4% 8% 0 8%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        margin-bottom: 5% !important;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        margin-top: 7% !important;
+        margin-bottom: 5% !important;
+    } 
+    
+    h3 {
+        font-size: 1.3rem;
+        margin-top: 2% !important;
+    }
+
+    ul {
+        list-style-position: outside;
+        padding-left: 1.3rem;
+    }
+
+    .descricao-titulo, .texto-pesquisa {
+        font-size: 1.2rem;
+        text-indent: 2rem;
+    }
+
+    .link-sumario {
+        font-size: 1rem;
+    }
+
+    .link-voltar {
+        bottom: 5% !important;
+        margin-top: 5%;
+    }
+
+    .link-voltar img {
+        width: 45px;
+        height: 45px;
+    }
+
+/* Inicial */
+    #texto-descricao {
+        padding: 10% 8% 15% 25% !important;
+    }
+    
+    #subtitulo-descricao {
+        font-size: 1rem !important;
+    }
+    
+    #paragrafo-descricao {
+        font-size: 0.7rem !important;
+    }
+
+    .titulo-pesquisa {
+        text-align: center;
+    }
+
+    #card-oqsao {
+        margin-top: 6% !important;
+    }
+
+    #oquesao {
+        margin-top: 0 !important;
+    }
+
+    .card-body {
+        padding: 0 !important;
+    }
+
+    .card-margin {
+        margin-bottom: 5% !important;
+    }
+
+    #morango {
+        text-align: center !important;
+    }
+
+    #inca {
+        display: none;
+    }
+
+    #inca-resp {
+        display: block !important;
+    }
+
+/* Consequência */
+    .vale-a-pena {
+        width: 100%;
+    }
+
+    .ul-margin {
+        margin-left: 0 !important;
+    }
+
+/* Exemplos */
+    .div-img {
+        margin: 5% 0 !important;
+    }
+
+    .img-click {
+        width: 20px;
+        height: 20px;
+    }
+
+    .texto-funcao {
+        margin-top: 4% !important;
+        font-size: 1rem !important;
+    }
+
+    .sem-funcoes, .com-funcoes {
+        width: 100% !important;
+    }
+
+    #db {
+        width: 65% !important;
+    }
+
+    #db-click {
+        width: 79% !important;
+    }
+
+/* Quem somos */
+    .qs {
+        margin: 0 5%;
+    }
+}

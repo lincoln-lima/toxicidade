@@ -1,0 +1,154 @@
+﻿extends layout
+
+block css 
+    link(rel='stylesheet', href='/css/consequencias.css')
+
+block titulo 
+    title=`Consequências`
+
+block conteudo 
+    main 
+        h1 Consequência do uso de Agrotóxicos
+        
+        h2#sumario Sumário
+        ul
+            li
+                a(href='#vantagens').link-sumario Vale à pena?
+            li
+                a(href='#efeitos').link-sumario Efeitos à saúde
+            li
+                a(href='#impactos').link-sumario Impactos Ambientais
+            li
+                a(href='#alternativas').link-sumario Alternativas ao uso
+
+        //-----------------------------------------
+        .row.div-vale-a-pena.justify-content-between
+            .col-5.vale-a-pena
+                h2.text-white.text-center#vantagens Vantagens 
+                ul.texto-pesquisa 
+                    li O uso de agrotóxicos em doses recomendadas garante o controle de pragas e doenças que afetam as plantações.
+                    li
+                        | A produtividade das lavouras aumenta em decorrência do uso de agrotóxicos e a qualidade visual dos produtos 
+                        | cultivados também aumenta.
+                    li O preço de produtos cultivados com agrotóxicos é reduzido em relação a produtos considerados “orgânicos”.
+            .col-5.vale-a-pena
+                h2.text-white.text-center#desvantagens Desvantagens
+                ul.texto-pesquisa 
+                    li 
+                        | O uso de agrotóxicos não é visto de modo positivo pelos órgãos da saúde, já que eles estão associados a problemas 
+                        | de saúde. 
+                    li
+                        | Provocação de danos ambientais em locais onde foi utilizado agrotóxicos de maneira incorreta, como a contaminação 
+                        | dos solos e da água.
+                    li O uso de agrotóxicos impacta o ecossistema local, como a cadeia alimentar e reprodução de seres vivos do lugar.
+    
+        //-----------------------------------------
+        h2#efeitos Efeitos à saúde
+        p.texto-pesquisa 
+            | A exposição aos agrotóxicos é capaz de causar diversas doenças, dependendo de fatores como tempo de contato,
+            | produto utilizado e a quantidade de produto absorvido pelo organismo. É possível se expor aos agrotóxicos no 
+            | trabalho, seja através da inalação, contato dérmico ou oral durante a aplicação e manipulação do produto, ou 
+            | no ambiente em geral, através das pulverizações aéreas que dispersam as substâncias pelo ambiente, consumo de água 
+            | ou alimentos contaminados, ou pelo contato direto com as roupas dos trabalhadores que se envolvem com a indústria 
+            | de agrotóxicos.
+        p.texto-pesquisa
+            | Os efeitos à saúde podem ser categorizados como agudos, de aparecimento rápido, ou crônicos, que aparecem após 
+            | exposição repetida a pequenas quantidades de agrotóxicos por um grande período de tempo.
+        br
+
+        p.texto-pesquisa Os efeitos agudos se tornam presentes a partir dos seguintes sintomas:
+        ul.texto-pesquisa.ul-margin
+            li 
+                strong Pele: 
+                |irritação, ardência, desidratação e alergias.
+            li 
+                strong Respiração: 
+                |ardência no nariz e da boca, tosse, coriza, dor no peito e dificuldade de respirar.
+            li 
+                strong Boca: 
+                |irritação da boca e da garganta, dor de estômago, náuseas, vômitos e diarreia.
+            li 
+                strong Outros efeitos: 
+                |dor de cabeça, transpiração anormal, fraqueza, câimbras, tremores e irritabilidade.
+        br
+
+        p.texto-pesquisa Os efeitos crônicos relatam-se a partir dos sintomas a seguir:
+        ul.texto-pesquisa.ul-margin
+            li
+                | Dificuldade para dormir, esquecimento, aborto, impotência, problemas respiratórios considerados graves, 
+                | alteração do funcionamento dos rins e do fígado, anormalidade da produção de hormônios da tireoide, dos 
+                | ovários e da próstata, aparecimento de cânceres, esterilidade, problemas no desenvolvimento intelectual e 
+                | físico das crianças, entre outros.
+        br
+
+        p.texto-pesquisa#obs
+            strong Observação: 
+            | “A associação entre exposição a agrotóxicos e desenvolvimento de câncer ainda gera polêmicas, 
+            | principalmente porque os indivíduos estão expostos a diversas substâncias, sem contar outros fatores genéticos. 
+            | Porém, é importante salientar que estudos vêm mostrando o potencial de desenvolvimento de câncer relacionado a 
+            | diversos agrotóxicos, justificando a recomendação de precaução para com o uso e contato.” (INCA, 2022).
+        //-----------------------------------------
+        .card.sem-borda.mb-3#div-impactos
+            .row.g-0
+                .col-md-8
+                    .card-body.card-padding-left
+                        h2.card-title#impactos Impactos Ambientais
+                        p.texto-pesquisa.card-text
+                            | O uso de agrotóxicos pode causar diversos danos ao meio ambiente, como:
+                        ul.texto-pesquisa#ul-impactos.card-margin
+                            li 
+                                strong Contaminação de águas: 
+                                |Pesticidas que são hidrossolúveis podem alcançar águas como córregos, rios, lagos, 
+                                |por meio do escoamento dos produtos a partir do solo contaminado. Os agrotóxicos também podem penetrar no 
+                                |solo, atingindo aquíferos -- o que é um problema crônico, já que os aquíferos, quando contaminados, demoram 
+                                |muito mais para que as impurezas sejam dissipadas.
+                            li 
+                                strong Contaminação do solo: 
+                                |Agrotóxicos como herbicidas, que são mais presentes na terra e costumam ficar retidos 
+                                |em diferentes graus. A característica que mais influencia nesse processo é o conteúdo orgânico, ou seja, 
+                                |quanto maior o teor de matéria orgânica, maior a absorção das substâncias.
+                            li
+                                strong Contaminação por volatilização: 
+                                |Os agrotóxicos utilizados como sprays podem se volatilizar e serem carregados 
+                                |para outras áreas além da área tratada. Muitos herbicidas se volatilizam e geram vapores que são considerados 
+                                |tóxicos para outras plantas, reduzindo a qualidade das sementes e aumentando a suscetibilidade de certas doenças.
+                            li 
+                                strong Impactos em organismos não alvo: 
+                                |Organismos como insetos benéficos ao solo, peixes, pássaros e espécies selvagens, 
+                                |que não são o alvo de agrotóxicos no momento do tratamento, sentem os efeitos dos produtos, sendo afetados de 
+                                |maneira negativa. Além disso, pode ocorrer o acúmulo de pesticidas nas cadeias alimentares, afetando diretamente 
+                                |predadores de topo e plantas aquáticas -- que são a base da cadeia alimentar.
+                .col-md-4.align-items-end.my-auto
+                    img.img-fluid(src='/img/planta.png', width='100%')
+        //-----------------------------------------
+        h2#alternativas Alternativa ao uso de agrotóxicos
+        p.texto-pesquisa 
+            | Mesmo que o uso de agrotóxicos seja importante para o extermínio de pragas, ainda sim é importante conhecer e utilizar alternativas 
+            | a esses produtos, uma vez que eles podem causar danos à saúde do homem e impactar o meio ambiente de forma negativa. Existem 
+            | inúmeras alternativas ao uso de agrotóxicos, como por exemplo:
+        
+        ul.texto-pesquisa
+            li 
+                strong Controle biológico: 
+                | É considerado um meio totalmente natural, onde predadores das principais pragas presentes nas plantações são introduzidos para 
+                | que eles sejam os responsáveis pelo extermínio das espécies que prejudicam a lavoura, sendo uma forma eficaz sem a necessidade 
+                | do uso de substâncias tóxicas.
+
+            li 
+                strong Agroecologia: 
+                | É o estudo da agricultura com uma visão considerada mais “limpa” e natural, onde o sistema de plantio não utiliza fertilizantes 
+                | industriais, transgênicos e agrotóxicos. A agroecologia se aproveita de tecnologias limpas, como misturar espécies e adubos 
+                | naturais para manter os solos férteis por um período de tempo mais longo, mantendo a produtividade e conservando a biodiversidade 
+                | do local de plantio. Alguns artifícios conhecidos que são utilizados pela agroecologia são a compostagem, rotação de culturas e 
+                | o uso de defensivos naturais.
+            li 
+                strong Manejo Integrado de Pragas (MIP): 
+                | Funciona como um monitoramento das pragas presentes na lavoura, sem tentar causar o extermínio destes, mas mantendo um controle 
+                | da quantidade de insetos para que não ocorra riscos de danos econômicos à plantação. São utilizados mecanismos como rotação de 
+                | culturas, monitoramento das pragas, doenças e inimigos naturais, além do tratamento de sementes. Os elementos naturais considerados 
+                | ameaçadores para a lavoura continuam em seu local de origem, mas são monitorados para que não influenciem economicamente o momento 
+                | de colheita.
+
+        .link-voltar
+            a(href='#sumario')
+                img(src='/img/voltar.png', width='50px', height='50px')

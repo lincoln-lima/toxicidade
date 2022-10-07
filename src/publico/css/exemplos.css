@@ -1,0 +1,39 @@
+.propriedades-composto {
+    text-indent: 0;
+}
+
+.propriedades-composto ul {
+    text-align: left;
+}
+
+.div-img {
+    margin: 2% 0;
+}
+
+.img {
+    padding: 1rem 0;
+}
+
+.texto-funcao {
+    color: #519119;
+    font-size: 1.3rem;
+
+    margin-top: 2%;
+}
+
+@keyframes esmaecendo {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.texto-funcao p {
+    animation: esmaecendo 1.5s infinite ease-in alternate;
+}
+
+.img-click {
+    margin-right: 0.5rem;
+}
+
+.com-funcoes {
+    display: none;
+}

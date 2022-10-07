@@ -1,0 +1,24 @@
+h2 {
+  margin-top: 3%;
+}
+
+.col {
+  padding: 0 3%;
+}
+
+.botao-verde {
+  color: white;
+  font-weight: 300;
+  font-size: 1.7rem;
+  border-radius: 15px;
+  background-color: #519119;
+  border: 2px solid #519119;
+  padding: 0 7%;
+  cursor: alias;
+}
+
+.botao-verde:hover, .botao-verde:focus {
+  background-color: white;
+  color: #519119;
+  text-decoration: underline;    
+}

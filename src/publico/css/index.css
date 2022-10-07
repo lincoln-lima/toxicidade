@@ -1,0 +1,60 @@
+#descricao {
+    text-align: right;
+    background-image: url("/img/fundo.gif");
+    background-size: cover;
+}
+
+#texto-descricao {
+    padding: 15% 10% 20% 30%;
+}
+
+#subtitulo-descricao {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#paragrafo-descricao {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+main {
+    padding-top: 0;
+}
+
+#card-oqsao {
+    margin-top: 1%;
+}
+
+.inca {
+    border: 1px solid #519119;
+}
+
+#inca-resp {
+    display: none;
+}
+
+#ul-fontes {
+    list-style-position: outside;
+    list-style-type: square;
+}
+
+.links-fontes {
+    color: #519119;
+    font-size: 1.2rem;
+    cursor: alias;
+}
+
+.links-fontes:hover {
+    color: black;
+    background-color: #519119;
+}
+
+.links-fontes:active {
+    font-weight: bold;
+}
+
+.links-fontes:visited {
+    color: black;
+}

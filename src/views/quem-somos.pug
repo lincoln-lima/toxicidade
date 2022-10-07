@@ -1,0 +1,48 @@
+extends layout 
+
+block css    
+    link(href='/css/quem-somos.css', rel='stylesheet')
+
+block titulo 
+    title=`Quem Somos`
+
+block conteudo
+    main
+        h1 Quem Somos
+
+        p.descricao-titulo
+            | Este é um projeto integrado que une as displinas de Química 4 e Desenvolvimento Web 2,
+            | este site foi desenvolvido por:
+
+        h2 Estudantes
+        .row.qs.row-cols-1.row-cols-md-3.g-4
+            .col
+                .card.sem-borda
+                    img.card-img-top(src='/img/gaby.png', alt='...')
+                    .card-body.text-center
+                        h3.card-title Gabrielly Ferreira
+            .col
+                .card.sem-borda
+                    img.card-img-top(src='/img/lincoln.png', alt='...')
+                    .card-body.text-center
+                        h3.card-title Lincoln Lima
+            .col
+                .card.sem-borda
+                    img.card-img-top(src='/img/thay.png', alt='...')
+                    .card-body.text-center
+                        h3.card-title Thayná Gimenez
+
+        h2 Professores
+        .row.qs.row-cols-1.row-cols-md-3.g-4.d-flex.justify-content-around
+            .col
+                .card.sem-borda
+                    img.card-img-top(src='/img/delmir.png', alt='...')
+                    .card-body.text-center
+                        h3.card-title Química 4
+                        a(href='http://lattes.cnpq.br/5427759723523621', target='_blank').botao-verde.btn Lattes
+            .col
+                .card.sem-borda
+                    img.card-img-top(src='/img/fabio.png', alt='...')
+                    .card-body.text-center
+                        h3.card-title Desenvolvimento Web 2
+                        a(href='http://lattes.cnpq.br/6998321135974577', target='_blank').botao-verde.btn Lattes

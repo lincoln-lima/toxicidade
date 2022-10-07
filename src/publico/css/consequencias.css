@@ -1,0 +1,38 @@
+#obs {
+    text-indent: 0;
+    margin-bottom: 3%;
+}
+
+.div-vale-a-pena {
+    margin: 4% 0;
+}
+
+#vantagens {
+    background-color: #5A7740;
+}
+
+#desvantagens {
+    background-color: #802C2C;
+}
+
+ul {
+    list-style-position: outside;
+    text-indent: 0 !important;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-top: 0.5%;
+}
+
+.ul-margin {
+    margin-left: 4rem;
+}
+
+#div-impactos {
+    margin-bottom: 3% !important;
+}
+
+#ul-impactos li {
+    margin-top: 2%;
+}

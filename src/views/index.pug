@@ -1,0 +1,74 @@
+extends layout
+
+block css
+    link(rel='stylesheet', href='/css/index.css')
+
+block titulo
+    title=`Agrotóxicos - 229A`
+
+block conteudo
+    #descricao.card.sem-borda.text-white
+      img.card-img(src='/img/homiToxico.png', alt='...')
+      #texto-descricao.card-img-overlay
+        h5#subtitulo-descricao.card-title Química 4 + Desenvolvimento Web 2
+        p#paragrafo-descricao.card-text
+          | O presente site está dividido em sua página inicial, exemplos de agrotóxicos e consequências de seu uso.
+          | Sua intenção é passar informação e agregar conhecimento a respeito do assunto.
+          
+    main
+      h2#sumario Sumário
+      ul
+        li
+          a(href='#oquesao').link-sumario O que são agrotóxicos?
+        li
+          a(href='#historia').link-sumario História
+        li
+          a(href='#efeitos').link-sumario Efeitos e classificação toxicológica
+        li
+          a(href='#fontes').link-sumario Fontes
+
+      #card-oqsao.card.sem-borda.mb-3
+        .row.g-0
+          .col-md-8
+            .card-body.card-padding-left
+              h2#oquesao.card-title O que são agrotóxicos?
+              p.texto-pesquisa.card-text.card-margin
+                | Agrotóxico é o nome dado à substância sintética utilizada para matar pragas como insetos, larvas, fungos, carrapatos e
+                | outros tanto em ambientes agrícolas como não agrícolas, com o intuito de regular o crescimento da plantação, além de evitar a disseminação de doenças causadas por estes.
+          .col-md-4.text-end.my-auto#morango
+            img.img-fluid(src='/img/morango.png', alt='...')
+
+      h2#historia História
+      p.texto-pesquisa
+        | O primeiro agrotóxico orgânico foi criado em 1874 por Othomar Zeidler, chamado DDT (dicloro-difenil-tricloroetano), mas foi 
+        | apenas utilizado a partir do ano de 1939 na Segunda Guerra mundial em soldados para impedir a disseminação do tifo.
+      p.texto-pesquisa
+        | Os agrotóxicos foram utilizados no início como armas químicas, e após o período de guerra eles começaram a ser utilizados como 
+        | reais defensivos agrícolas. Nesse momento da História aconteceu a chamada “revolução verde”, onde os países vencedores da guerra 
+        | perceberam uma possibilidade de investir na indústria química para expandir os negócios agrícolas, em conjunto com diversas outras 
+        | inovações tecnológicas que aconteceram nesse período. O objetivo desta revolução era produzir alimentos para quem passava fome.
+      p.texto-pesquisa
+        | No Brasil essa revolução chegou na década de 1960, por meio da imposição de fábricas de agrotóxicos em território nacional. O agricultor, 
+        | ao realizar um financiamento bancário para compra de sementes, precisaria comprar o agrotóxico e adubo junto à elas para o financiamento 
+        | ser concedido. Isso resultou apenas em uma contaminação ambiental, sem o extermínio da fome. Na década de 1970 outras várias indústrias de 
+        | agrotóxicos espalhadas pelo mundo foram transferidas para o Brasil, tornando o país um dos maiores consumidores de agrotóxicos na agricultura do mundo.
+
+      h2#efeitos Efeitos e classificação toxicológica
+      .text-center
+        img.inca#inca(src='/img/inca.png', width='70%')
+        img.inca#inca-resp(src='/img/inca-resp.jpg', width='100%')
+
+      h2#fontes Fontes
+      ul#ul-fontes
+        li
+          a.links-fontes(href='https://summitagro.estadao.com.br/', target='_blank') Summit Agro
+        li
+          a.links-fontes(href='http://www.inca.gov.br/', target='_blank') INCA
+        li
+          a.links-fontes(href='http://revista.abrale.org.br/', target='_blank') Revista Abrale Online
+        li 
+          a.links-fontes(href='http://etica-ambiental.com.br/', target='_blank') Ética Ambiental  
+
+      .link-voltar
+        a(href='#sumario')
+          img(src='/img/voltar.png', width='50px')
